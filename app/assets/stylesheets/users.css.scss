@@ -1,3 +1,76 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+input:focus{
+ outline:none;
+}
+
+#search {
+	margin-left:20px;
+}
+
+
+#search input[type="text"] {
+    background: url(http://www.bloggermint.com/demos/css3searchbox/search-white.png) no-repeat 10px 6px #444;
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #d7d7d7;
+    width:150px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); 
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+#search input[type="text"]:focus {
+    background: url(http://www.bloggermint.com/demos/css3searchbox/search-dark.png) no-repeat 10px 6px #fcfcfc;
+    color: #6a6f75;
+    width: 200px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    }
+
+table {
+	overflow:hidden;
+	border:1px solid #d3d3d3;
+	background:#fefefe;
+	width:70%;
+	margin:2% auto 0 20px;
+	-moz-border-radius:5px; /* FF1+ */
+	-webkit-border-radius:5px; /* Saf3-4 */
+	border-radius:5px;
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+th, td {padding:18px 28px 18px; text-align:center; }
+
+th {padding-top:22px; text-shadow: 1px 1px 1px #fff; background:#e8eaeb;}
+
+td {border-top:1px solid #e0e0e0; border-right:1px solid #e0e0e0;}
+
+td.first, th.first {text-align:left}
+
+/*
+Background gradients are completely unnecessary but a neat effect.
+*/
+
+td {
+	background: -moz-linear-gradient(100% 25% 90deg, #fefefe, #f9f9f9);
+	background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f9f9f9), to(#fefefe));
+}
+
+th {
+	background: -moz-linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
+	background: -webkit-gradient(linear, 0% 0%, 0% 20%, from(#ededed), to(#e8eaeb));
+}
