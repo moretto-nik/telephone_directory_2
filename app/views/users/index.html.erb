@@ -1,0 +1,31 @@
+<%= javascript_tag :defer => 'defer' do -%>
+  //funzione che alla pressione di invio della barra di ricerca richiama in get la pagina index
+  $('#input_search').keypress(function(e){
+    if(e.which == 13){
+     $('form#search').submit();
+     }
+  });
+<% end -%>
+
+<h1>Listing users</h1>
+
+<form method="get" action="/users" id="search">
+  <input id="input_search" type="text" placeholder="Search..." val="" name="input_search">
+</form>
+
+<table id="users">
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Telephone number</th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <%=format_user(user).html_safe%>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Add New Entry', new_user_path %>
